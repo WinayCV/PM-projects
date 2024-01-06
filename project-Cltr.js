@@ -10,7 +10,7 @@ projectCltr.create = async (req, res) => {
     await project.save();
 
     // https: await axios.post('http://localhost:5004/events', {
-    https: await axios.post('event-bus-u25c.onrender.com', {
+    https: await axios.post('http://event-bus-u25c.onrender.com', {
       payload: project,
       type: 'ProjectCreated',
     });
